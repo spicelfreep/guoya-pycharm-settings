@@ -10,8 +10,9 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="clas" value="class $NAME$():&#10;    &quot;&quot;&quot;&#10;    $NAME$类用于$END$&#10;    &quot;&quot;&quot;&#10;    def my_function(self):&#10;        &quot;&quot;&quot;&#10;        方法用于&#10;        &quot;&quot;&quot;&#10;        return self" description="def class function" toReformat="false" toShortenFQNames="true">
+  <template name="clas" value="class $NAME$():&#10;    &quot;&quot;&quot;&#10;    $NAME$类用于$END$&#10;    &quot;&quot;&quot;&#10;    def __ini__(self):&#10;        &#10;       &#10;    def $FUNC$(self):&#10;        &quot;&quot;&quot;&#10;        $FUNC$方法用于$END$&#10;        &quot;&quot;&quot;&#10;        return self" description="def class function" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
