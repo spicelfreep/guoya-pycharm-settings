@@ -1,4 +1,7 @@
 <templateSet group="Python">
+  <template name="main" value="if __name__ == '__main__':&#10;    main()" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
   <template name="fnote" value="#!/usr/bin/env python&#10;# -*- coding: utf-8 -*-&#10;&#10;'''&#10;@File       :   $FILENAME$.py&#10;@Time       :   $DATE$ $TIME$&#10;@Author     :   helin&#10;@Version    :   1.0&#10;@Contact    :   spicalfreep@163.com&#10;@License    :   (C)Copyright 2019-2020&#10;@Desc       :   None&#10;&#10;@Modify Time      @Author     @Version    @Desciption&#10;------------      -------     --------    -----------&#10;$DATE$ $TIME$  helin       1.0         None&#10;'''&#10;" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="fileName()" defaultValue="" alwaysStopAt="false" />
     <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="false" />
@@ -13,7 +16,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="de" value="def $NAME$():&#10;    &quot;&quot;&quot;&#10;    方法用于$END$&#10;    &quot;&quot;&quot;&#10;    return True" description="def func1" toReformat="true" toShortenFQNames="true">
+  <template name="def" value="def $NAME$():&#10;    &quot;&quot;&quot;&#10;    方法用于$END$&#10;    &quot;&quot;&quot;&#10;    return True" description="def func1" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
@@ -25,6 +28,11 @@
     </context>
   </template>
   <template name="if" value="if $END$:&#10;    # 注释&#10;    print(1)&#10;else:&#10;    # 注释&#10;    print(2)" description="def if" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="defm" value="def main():&#10;    &#10;    return True" description="def main func1" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
