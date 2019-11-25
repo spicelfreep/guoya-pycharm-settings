@@ -43,4 +43,10 @@
       <option name="Python" value="true" />
     </context>
   </template>
+  <template name="fore" value="for key, value in enumerate($ITEMS$):&#10;    " description="for i in enum1" toReformat="false" toShortenFQNames="true">
+    <variable name="ITEMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
 </templateSet>
