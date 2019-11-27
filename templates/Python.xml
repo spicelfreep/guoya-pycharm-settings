@@ -23,7 +23,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="forin" value="for i in range(5):&#10;    $END$" description="for i in range5" toReformat="false" toShortenFQNames="true">
+  <template name="forr" value="for i in range(n):&#10;    $END$" description="for i in range5" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
@@ -49,7 +49,14 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="fort" value="        for k, v in attrs.items():&#10;            $END$" description="for k, v in attrs.items():" toReformat="false" toShortenFQNames="true">
+  <template name="fort" value="for k, v in attrs.items():&#10;    $END$" description="for k, v in attrs.items():" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="tryef" value="try:&#10;    $FIRST$&#10;except $ERROR$ as e:&#10;    print('except:', e)&#10;finally:&#10;    print('finally...')" description="try except finally" toReformat="true" toShortenFQNames="true">
+    <variable name="FIRST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERROR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Python" value="true" />
     </context>
