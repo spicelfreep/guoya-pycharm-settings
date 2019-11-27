@@ -28,7 +28,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="if" value="if $END$:&#10;    # 注释&#10;    print(1)&#10;else:&#10;    # 注释&#10;    print(2)" description="def if" toReformat="false" toShortenFQNames="true">
+  <template name="if" value="if $END$:&#10;    &#10;else:&#10;    " description="def if" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
