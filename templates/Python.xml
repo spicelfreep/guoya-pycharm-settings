@@ -2,7 +2,7 @@
   <template name="main" value="if __name__ == '__main__':&#10;    main()" description="if __name__ == '__main__'" toReformat="false" toShortenFQNames="true">
     <context />
   </template>
-  <template name="fnote" value="#!/usr/bin/env python&#10;# -*- coding: utf-8 -*-&#10;&#10;'''&#10;@File       :   $FILENAME$.py&#10;@Time       :   $DATE$ $TIME$&#10;@Author     :   helin&#10;@Version    :   1.0&#10;@Contact    :   spicalfreep@163.com&#10;@License    :   (C)Copyright 2019-2020&#10;@Desc       :   None&#10;&#10;@Modify Time      @Author     @Version    @Desciption&#10;------------      -------     --------    -----------&#10;$DATE$ $TIME$  helin       1.0         None&#10;'''&#10;" toReformat="true" toShortenFQNames="true">
+  <template name="fnote" value="#!/usr/bin/env python&#10;# -*- coding: utf-8 -*-&#10;&#10;'''&#10;@File       :   $FILENAME$.py&#10;@Time       :   $DATE$ $TIME$&#10;@Author     :   helin&#10;@Version    :   1.0&#10;@Contact    :   spicalfreep@163.com&#10;@License    :   (C)Copyright 2019-2020&#10;@Desc       :   None&#10;&#10;@Modify Time      @Author     @Version    @Desciption&#10;------------      -------     --------    -----------&#10;$DATE$ $TIME$  helin       1.0         None&#10;'''&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="FILENAME" expression="fileName()" defaultValue="" alwaysStopAt="false" />
     <variable name="DATE" expression="date()" defaultValue="" alwaysStopAt="false" />
     <variable name="TIME" expression="time()" defaultValue="" alwaysStopAt="false" />
