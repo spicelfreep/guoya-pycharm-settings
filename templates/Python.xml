@@ -10,7 +10,7 @@
       <option name="Python" value="true" />
     </context>
   </template>
-  <template name="clas" value="class $NAME$(object):&#10;&#10;    def __init__(self):&#10;        &#10;       &#10;    def $FUNC$(self):&#10;        return self" description="def class function" toReformat="true" toShortenFQNames="true">
+  <template name="clas" value="class $NAME$(object):&#10;&#10;    def __init__(self):&#10;        &#10;       &#10;    def $FUNC$&#10;        return self" description="def class function" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
